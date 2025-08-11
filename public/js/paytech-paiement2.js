@@ -29,7 +29,7 @@ async function processPayment() {
     }
 
     // Appel API
-    const response = await fetch("/api/payment2", {
+    const response = await fetch("/api/paiement2", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
