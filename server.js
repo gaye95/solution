@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.post("/api/payment1", async (req, res) => {
+app.post("/api/paiement1", async (req, res) => {
   const { genre, email, message, date_inscription } = req.body;
 
   if (!email || !message) {
@@ -88,7 +88,7 @@ app.post("/api/payment1", async (req, res) => {
   }
 });
 
-app.post("/api/payment2", async (req, res) => {
+app.post("/api/paiement2", async (req, res) => {
   const { genre, email, message, date_inscription } = req.body;
 
   if (!email || !message) {
@@ -163,7 +163,7 @@ app.post("/api/payment2", async (req, res) => {
   }
 });
 
-app.post("/api/payment3", async (req, res) => {
+app.post("/api/paiement3", async (req, res) => {
   const { genre, email, message, date_inscription } = req.body;
 
   if (!email || !message) {
